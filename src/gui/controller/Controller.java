@@ -7,13 +7,15 @@ public class Controller
 {
 	private Human myHuman;
 	private FirstFrame appFrame;
-public void start()
-{
-	
-}
-public Controller()
-{
-	myHuman = new Human();
-	appFrame = new FirstFrame();
-}
+
+	public void start()
+	{
+
+	}
+
+	public Controller()
+	{
+		Human myHuman = new Human();
+		FirstFrame appFrame = new FirstFrame(this);
+	}
 }
